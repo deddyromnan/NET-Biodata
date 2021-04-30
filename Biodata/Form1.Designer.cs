@@ -73,6 +73,7 @@ namespace Biodata
             // 
             // dateTimePickerDOB
             // 
+            this.dateTimePickerDOB.CustomFormat = "dd-MM-yyyy";
             this.dateTimePickerDOB.Location = new System.Drawing.Point(139, 207);
             this.dateTimePickerDOB.Name = "dateTimePickerDOB";
             this.dateTimePickerDOB.Size = new System.Drawing.Size(336, 26);

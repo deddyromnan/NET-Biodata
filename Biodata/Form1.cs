@@ -9,11 +9,13 @@ namespace Biodata
         public Form1()
         {
             InitializeComponent();
+            dateTimePickerDOB.Format = DateTimePickerFormat.Custom;
+            dateTimePickerDOB.CustomFormat = "dd/MM/yyyy";
         }
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            string dob = dateTimePickerDOB.Value.ToString("dd MMMM yyyy");
+            string dob = dateTimePickerDOB.Value.ToString();
             int age = DateTime.Now.Year - dateTimePickerDOB.Value.Year;
             if (dateTimePickerDOB.Value.Date > DateTime.Now.AddYears(age)) age--;
 
